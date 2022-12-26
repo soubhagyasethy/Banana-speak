@@ -1,0 +1,76 @@
+
+:root {
+    --yellow: #F2C94C;
+    --black: #333333;
+    --width-break: 600px;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    color: var(--black);
+    margin: 0;
+}
+
+nav {
+    display: block;
+    box-sizing: border-box;
+    height: 12vh;
+    width: 100%;
+    background-color: var(--yellow);
+}
+
+nav div {
+    padding-top: 0.5rem;
+}
+textarea {
+    font-size:large;
+    display: block;
+    width: 90%;
+    height: 12vh;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#btn-translate {
+    font-size: medium;
+    font-family:'Kalam', cursive;
+    color: var(--black);
+    display: block;
+    background-color: var(--yellow) ;
+    width: 40%;
+    height: 9vh;
+    margin: 1rem;
+    border: 0.5rem solid var(--yellow);
+    /* border-radius: 1.5rem; */
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#trans-line {
+    padding-left: 1.2rem;
+    font-size: smaller;
+}
+#txt-output {
+    display: block;
+    width: 90%;
+    height: 12vh;
+    border: 1px solid grey;
+    margin: 1rem;
+    padding: 1rem;
+    /* box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: var(--yellow);
+    padding: 1rem;
+}
+
+footer div {
+    font-size: x-large; 
+    text-align: center;
+}
