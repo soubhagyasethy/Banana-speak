@@ -1,79 +1,113 @@
-
 :root {
-    --yellow: #F2C94C;
-    --black: #333333;
-    --width-break: 600px;
+  --yellow: #f2c94c;
+  --black: #333333;
+  --width-break: 600px;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Kalam', cursive;
-    font-style: italic;
-    color: var(--black);
-    margin: 0;
+  font-family: "Kalam", cursive;
+  font-style: italic;
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
-    display: block;
-    box-sizing: border-box;
-    height: 16vh;
-    width: 100%;
-    background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16vh;
+  width: 100%;
+  background-color: var(--yellow);
 }
 
-nav div {
-    padding-top: 1.3rem;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 textarea {
-    font-size:large;
-    display: block;
-    width: 90%;
-    height: 10vh;
-    padding: 1rem;
-    margin: 2rem;
+  font-size: large;
+  width: 90%;
+  height: 15vh;
+  padding: 1rem;
+  margin: 2rem;
 }
 
 #btn-translate {
-    font-size: medium;
-    font-family:'Kalam', cursive;
-    font-style: italic;
-    color: var(--black);
-    display: block;
-    background-color: var(--yellow) ;
-    width: 40%;
-    height: 9vh;
-    margin: 2rem;
-    border: 0.5rem solid var(--yellow);
-    /* border-radius: 1.5rem; */
-    cursor: pointer;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-family: "Kalam", cursive;
+  font-style: italic;
+  color: var(--black);
+  background-color: var(--yellow);
+  width: 40%;
+  height: 10vh;
+  margin: 1rem;
+  border: 0.5rem solid var(--yellow);
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 #trans-line {
-    margin-left: 2rem;
-    font-size: smaller;
-}
-#txt-output {
-    display: block;
-    width: 90%;
-    height: 8vh;
-    border: 1px solid grey;
-    margin: 2rem;
-    padding: 1rem;
-    overflow: scroll;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  font-size: medium;
 }
 
-footer{
-    box-sizing: border-box;
-    width: 100%;
-    bottom: 0;
-    /* position: fixed; */
-    background-color: var(--yellow);
-    padding: 1rem;
+#txt-output {
+  display: block;
+  width: 90%;
+  height: 12vh;
+  border: 1px solid grey;
+  margin: 2rem;
+  padding: 1rem;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--yellow);
+  padding: 1rem;
 }
 
 footer div {
-    font-size: x-large; 
-    text-align: center;
+  font-size: x-large;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+
+  textarea {
+    font-size: 1rem;
+    width: 90%;
+    height: 15vh;
+    padding: 1rem;
+    margin: 2rem;
+  }
 }
